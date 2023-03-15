@@ -1,0 +1,137 @@
+$media-2sm: 400px;
+$media-sm: 640px;
+$media-md: 768px;
+$media-lg: 1024px;
+$media-xl: 1280px;
+$media-2xl: 1536px;
+
+@media (max-width: $media-2xl) {
+  .header {
+    &__nav {
+      column-gap: 180px;
+    }
+  }
+}
+
+@media (max-width: $media-xl) {
+  .header {
+    &__nav {
+      column-gap: 90px;
+    }
+  }
+}
+
+@media (max-width: $media-lg) {
+  .header {
+    &__nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      &.active {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        backdrop-filter: blur(32px);
+        z-index: 9;
+      }
+    }
+    .center-list{
+      flex-direction: column;
+      margin-top: 150px;
+      row-gap: 30px;
+    }
+    .bottom-list{
+      width: 100%;
+    }
+    &__list {
+      column-gap: 10px;
+    }
+    &__item-btn{
+      width: 100%;
+    }
+    &__btn{
+      width: 100%;
+      z-index: 10;
+    }
+    .burger {
+      position: fixed;
+      top: 48px;
+      right: 14px;
+      z-index: 10;
+      transform: translateY(-50%);
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-left: 1px solid rgba(255, 255, 255, 0.05);
+      &.active {
+        .burger__line {
+          z-index: 10;
+          background: none;
+          transition: 0.1s ease;
+          &::before {
+            transform: rotate(135deg);
+            top: 0;
+            transition: 0.6s ease;
+          }
+
+          &::after {
+            transform: rotate(45deg);
+            bottom: 0;
+            transition: 0.6s ease;
+          }
+        }
+      }
+      &__line {
+        position: relative;
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          top: 7px;
+          left: 0;
+          transition: 0.5s;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          bottom: 7px;
+          left: 0;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-md) {
+  
+}
+
+@media (max-width: $media-sm) {
+  
+}
+@media (max-width: $media-2sm) {
+
+}

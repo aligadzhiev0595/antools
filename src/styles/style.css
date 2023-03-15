@@ -1,0 +1,240 @@
+@import url(../fonts/Poppins-Light/style.css);
+@import url(../fonts/Poppins-Medium/style.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(31, 37, 42);
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+section {
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.btn {
+  border-radius: 7px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header {
+  padding-top: 30px;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .brand__link {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.902);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 240px;
+       column-gap: 240px;
+}
+.header__list {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: center;
+}
+.header__link {
+  color: rgba(255, 255, 255, 0.549);
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header__link:hover {
+  transition: 0.3s;
+  color: rgb(255, 110, 48);
+}
+.header__btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.549);
+  transition: 0.3s;
+}
+.header__btn:hover {
+  background-color: rgb(255, 110, 48);
+  color: rgba(255, 255, 255, 0.902);
+  transition: 0.3s;
+}
+
+@media (max-width: 1536px) {
+  .header__nav {
+    -moz-column-gap: 180px;
+         column-gap: 180px;
+  }
+}
+@media (max-width: 1280px) {
+  .header__nav {
+    -moz-column-gap: 90px;
+         column-gap: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .header__nav.active {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-backdrop-filter: blur(32px);
+            backdrop-filter: blur(32px);
+    z-index: 9;
+  }
+  .header .center-list {
+    flex-direction: column;
+    margin-top: 150px;
+    row-gap: 30px;
+  }
+  .header .bottom-list {
+    width: 100%;
+  }
+  .header__list {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .header__item-btn {
+    width: 100%;
+  }
+  .header__btn {
+    width: 100%;
+    z-index: 10;
+  }
+  .header .burger {
+    position: fixed;
+    top: 48px;
+    right: 14px;
+    z-index: 10;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .header .burger.active .burger__line {
+    z-index: 10;
+    background: none;
+    transition: 0.1s ease;
+  }
+  .header .burger.active .burger__line::before {
+    transform: rotate(135deg);
+    top: 0;
+    transition: 0.6s ease;
+  }
+  .header .burger.active .burger__line::after {
+    transform: rotate(45deg);
+    bottom: 0;
+    transition: 0.6s ease;
+  }
+  .header .burger__line {
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header .burger__line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 7px;
+    left: 0;
+    transition: 0.5s;
+  }
+  .header .burger__line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    bottom: 7px;
+    left: 0;
+    transition: 0.5s;
+  }
+}/*# sourceMappingURL=style.css.map */
