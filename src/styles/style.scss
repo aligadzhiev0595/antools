@@ -61,17 +61,10 @@ section{
   }
 }
 
-
-.btn {
-	border-radius: 7px;
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-}
-
 @import url(../fonts/Poppins-Light/style.css);
 @import url(../fonts/Poppins-Medium/style.css);
 @import "./scss/variables";
 @import "./scss/header";
+@import "./scss/home";
 @import "./scss/popup";
 @import "./scss/response";

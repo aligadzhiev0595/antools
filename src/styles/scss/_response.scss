@@ -123,13 +123,29 @@ $media-2xl: 1536px;
       }
     }
   }
-}
-
-@media (max-width: $media-md) {
+  .home {
+    &__social {
+      justify-content: center;
+    }
+  }
   
 }
 
+@media (max-width: $media-md) {
+  .title {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: $media-sm) {
+  .home {
+    .wrapper {
+      &::after {
+        right: -50px;
+        z-index: -100;
+      }
+    }
+  }
   .overlay {
     .popup {
       max-width: 350px;
@@ -137,6 +153,17 @@ $media-2xl: 1536px;
   }
 }
 @media (max-width: $media-2sm) {
+  .home {
+    &__title {
+      font-size: 35px;
+    }
+    .wrapper {
+      &::after {
+        right: -50px;
+        z-index: -100;
+      }
+    }
+  }
   .overlay {
     .popup {
       max-width: 350px;
