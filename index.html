@@ -84,6 +84,106 @@
 		</main>
 		<footer></footer>
 
+		<div class="overlay">
+      <div class="popup">
+        <form class="popup__form popup__form-login" action="">
+          <h2 class="popup__title">Login to your account</h2>
+          <div class="popup__inner">
+            <label class="popup__label" for="email">Email</label>
+            <input
+              class="popup__field"
+              required
+              id="email"
+              type="email"
+              placeholder="input ur email..."
+            />
+          </div>
+          <div class="popup__inner">
+            <label class="popup__label" for="password">Password</label>
+            <input
+              class="popup__field"
+              required
+              id="password"
+              type="password"
+              placeholder="input ur password..."
+            />
+          </div>
+          <button class="btn popup__btn" type="submit">Log in</button>
+        </form>
+        <form class="popup__form popup__form-signup" action="">
+          <h2 class="popup__title">Registration</h2>
+          <div class="popup__inner">
+            <label class="popup__label" for="username">Username</label>
+            <input
+              class="popup__field"
+              id="username"
+              required
+              type="text"
+              placeholder="input ur username..."
+            />
+          </div>
+          <div class="popup__inner">
+            <label class="popup__label" for="email-registration">Email</label>
+            <input
+              class="popup__field"
+              required
+              id="email-registration"
+              type="email"
+              placeholder="input ur email..."
+            />
+          </div>
+          <div class="popup__inner">
+            <label class="popup__label" for="password-registration"
+              >Password</label
+            >
+            <input
+              class="popup__field"
+              required
+              id="password-registration"
+              type="password"
+              placeholder="input ur password..."
+            />
+          </div>
+          <div class="popup__inner">
+            <label class="popup__label" for="password-registration-again"
+              >The password again</label
+            >
+            <input
+              class="popup__field"
+              required
+              id="password-registration-again"
+              type="password"
+              placeholder="input ur password again..."
+            />
+          </div>
+          <button class="btn popup__btn" type="submit">Sign up</button>
+        </form>
+        <span class="popup__close">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.5"
+              y="0.5"
+              width="31"
+              height="31"
+              rx="7.5"
+              fill="white"
+              stroke="#DBDBDB"
+            />
+            <path
+              d="M20.0799 18.6155L17.6311 16.1667L20.0798 13.718C21.0241 12.7738 19.5596 11.3093 18.6154 12.2536L16.1667 14.7023L13.7179 12.2535C12.7738 11.3095 11.3095 12.7738 12.2535 13.7179L14.7023 16.1667L12.2536 18.6154C11.3093 19.5596 12.7738 21.0241 13.718 20.0798L16.1667 17.6311L18.6155 20.0799C19.5597 21.0241 21.0241 19.5597 20.0799 18.6155Z"
+              fill="#B5B5B5"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+
 		<script src="src/js/main.js"></script>
 	</body>
 </html>

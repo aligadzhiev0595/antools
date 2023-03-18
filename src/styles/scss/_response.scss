@@ -130,8 +130,16 @@ $media-2xl: 1536px;
 }
 
 @media (max-width: $media-sm) {
-  
+  .overlay {
+    .popup {
+      max-width: 350px;
+    }
+  }
 }
 @media (max-width: $media-2sm) {
-
+  .overlay {
+    .popup {
+      max-width: 350px;
+    }
+  }
 }
