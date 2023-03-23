@@ -418,6 +418,35 @@ section {
   transition: 0.3s;
 }
 
+.companions {
+  padding-top: 70px;
+}
+.companions__inner {
+  width: 100%;
+  padding: 55px 80px;
+  background-color: rgba(40, 48, 54, 0.6);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.companions__inner::after {
+  content: "";
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 110, 48, 0.6);
+  filter: blur(40px);
+}
+.companions__title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+
 .overlay {
   position: fixed;
   width: 100%;
