@@ -67,3 +67,20 @@ document.querySelector(".tools__more").onclick = function () {
     el.classList.toggle("active");
   });
 };
+
+/**
+ * brief: logic for swiper slider
+ */
+
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
