@@ -19,6 +19,7 @@ $media-2xl: 1536px;
 			column-gap: 90px;
 		}
 	}
+
 	.companions {
 		.row {
 			.col-3 {
@@ -29,6 +30,22 @@ $media-2xl: 1536px;
 			}
 		}
 	}
+
+	.new-tools {
+    .wrapper__inner {
+      margin-left: 20px;
+      .wrapper-card {
+        width: 45%;
+        padding: 20px;
+        margin-right: 0;
+        &:nth-child(1),
+        &:nth-child(3) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: $media-lg) {
@@ -147,6 +164,35 @@ $media-2xl: 1536px;
 			}
 		}
 	}
+	.new-tools {
+    .row {
+      .col-5 {
+        width: 100%;
+        .wrapper {
+          padding: 10px;
+          &__title {
+            text-align: center;
+          }
+          &__subtitle {
+            text-align: center;
+          }
+          &__btn {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+      .col-7 {
+        width: 100%;
+        .wrapper {
+          margin-top: 30px;
+          &__inner {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $media-md) {
@@ -177,6 +223,21 @@ $media-2xl: 1536px;
 			}
 		}
 	}
+	.new-tools {
+    .row {
+      .col-7 {
+        width: 100%;
+        .wrapper__inner {
+          width: 100%;
+          margin-left: 0;
+        }
+        .wrapper-card {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $media-sm) {
@@ -280,4 +341,34 @@ $media-2xl: 1536px;
 			padding: 35px 40px;
 		}
 	}
+	.new-tools {
+    padding-top: 50px;
+    .row {
+      margin: 0 5px;
+      .col-5 {
+        .wrapper {
+          &__title {
+            font-size: 30px;
+          }
+          &__subtitle {
+            font-size: 14px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .col-7 {
+        .wrapper {
+          .wrapper__inner {
+            margin-top: 20px;
+          }
+          .wrapper-card {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 10px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }

@@ -686,6 +686,17 @@ section {
   .companions .row .col-3 .wrapper {
     text-align: center;
   }
+  .new-tools .wrapper__inner {
+    margin-left: 20px;
+  }
+  .new-tools .wrapper__inner .wrapper-card {
+    width: 45%;
+    padding: 20px;
+    margin-right: 0;
+  }
+  .new-tools .wrapper__inner .wrapper-card:nth-child(1), .new-tools .wrapper__inner .wrapper-card:nth-child(3) {
+    margin-right: 20px;
+  }
 }
 @media (max-width: 1024px) {
   .header__nav {
@@ -794,6 +805,31 @@ section {
   .tools .row .col-4 {
     width: 49.333333%;
   }
+  .new-tools .row .col-5 {
+    width: 100%;
+  }
+  .new-tools .row .col-5 .wrapper {
+    padding: 10px;
+  }
+  .new-tools .row .col-5 .wrapper__title {
+    text-align: center;
+  }
+  .new-tools .row .col-5 .wrapper__subtitle {
+    text-align: center;
+  }
+  .new-tools .row .col-5 .wrapper__btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .new-tools .row .col-7 {
+    width: 100%;
+  }
+  .new-tools .row .col-7 .wrapper {
+    margin-top: 30px;
+  }
+  .new-tools .row .col-7 .wrapper__inner {
+    justify-content: center;
+  }
 }
 @media (max-width: 768px) {
   .title {
@@ -818,6 +854,17 @@ section {
   .companions .row .col-3 {
     width: 45%;
     margin-bottom: 10px;
+  }
+  .new-tools .row .col-7 {
+    width: 100%;
+  }
+  .new-tools .row .col-7 .wrapper__inner {
+    width: 100%;
+    margin-left: 0;
+  }
+  .new-tools .row .col-7 .wrapper-card {
+    width: 100%;
+    margin-right: 0;
   }
 }
 @media (max-width: 640px) {
@@ -896,5 +943,27 @@ section {
   }
   .companions__inner {
     padding: 35px 40px;
+  }
+  .new-tools {
+    padding-top: 50px;
+  }
+  .new-tools .row {
+    margin: 0 5px;
+  }
+  .new-tools .row .col-5 .wrapper__title {
+    font-size: 30px;
+  }
+  .new-tools .row .col-5 .wrapper__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .new-tools .row .col-7 .wrapper .wrapper__inner {
+    margin-top: 20px;
+  }
+  .new-tools .row .col-7 .wrapper .wrapper-card {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
