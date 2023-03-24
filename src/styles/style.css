@@ -638,6 +638,61 @@ section {
   background-color: rgb(255, 110, 48);
 }
 
+.contact {
+  padding-top: 100px;
+}
+.contact__title {
+  margin-bottom: 35px;
+  font-size: 48px;
+  text-align: center;
+}
+.contact__subtitle {
+  font-size: 18px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.contact .form {
+  width: 100%;
+  max-width: 497px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.contact .form__search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.contact .form__field {
+  width: 100%;
+  height: 64px;
+  background-color: rgb(40, 48, 54);
+  border-radius: 15px;
+  border: none;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.902);
+}
+.contact .form__btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.902);
+  padding: 12px 36px;
+  background-color: rgb(255, 110, 48);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 .overlay {
   position: fixed;
   width: 100%;
