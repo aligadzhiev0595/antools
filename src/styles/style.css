@@ -580,6 +580,64 @@ section {
   transition: 0.3s;
 }
 
+.review {
+  padding-top: 120px;
+}
+.review__inner {
+  width: 100%;
+}
+.review__slide {
+  display: flex;
+  justify-content: space-between;
+}
+.review__slide-img {
+  display: block;
+}
+.review__slide-desc {
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.549);
+  position: relative;
+}
+.review__slide-desc::after {
+  content: url(../images/review/after.svg);
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+.review .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 90px !important;
+}
+.review .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.review .swiper-button-next,
+.review .swiper-button-prev {
+  color: rgb(255, 110, 48);
+}
+.review .swiper-pagination {
+  bottom: 0;
+}
+.review .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.902);
+  border-radius: 4px;
+  width: 44px;
+  height: 6px;
+}
+.review .swiper-pagination-bullet-active {
+  background-color: rgb(255, 110, 48);
+}
+
 .overlay {
   position: fixed;
   width: 100%;
