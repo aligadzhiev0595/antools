@@ -30,7 +30,7 @@
     &__field {
       width: 100%;
       height: 64px;
-      background: $black-color;
+      background-color: $black-color;
       border-radius: 15px;
       border: none;
       padding-left: 50px;
@@ -64,7 +64,7 @@
   &__inner {
     width: 58px;
     height: 58px;
-    background: $black-color;
+    background-color: $black-color;
     border-radius: 8px;
 		box-shadow: 0 0 3px 3px $main-color;
 		display: flex;
