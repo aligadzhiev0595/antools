@@ -1253,6 +1253,9 @@ body {
   .companions__inner {
     padding: 50px 75px;
   }
+  .review {
+    padding-top: 60px;
+  }
   .review__wrapper.active {
     flex-direction: column;
   }
@@ -1301,11 +1304,17 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .home {
+    padding: 60px 0 60px;
+  }
   .home .wrapper__title {
     font-size: 35px;
   }
   .overlay .popup {
     max-width: 350px;
+  }
+  .companions {
+    padding-top: 60px;
   }
   .companions__title {
     font-size: 22px;
@@ -1313,9 +1322,24 @@ body {
   .companions__inner {
     padding: 35px 40px;
   }
+  .review .dots {
+    padding-top: 30px;
+  }
   .review .btn-next,
   .review .btn-prev {
     width: 25px;
     height: 25px;
+  }
+  .new-tools {
+    padding-top: 60px;
+  }
+  .contact {
+    padding-top: 60px;
+  }
+  .contact__subtitle {
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding-top: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
