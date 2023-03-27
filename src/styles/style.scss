@@ -1,150 +1,41 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 body {
-  background-color: rgb(31, 37, 42);
+	background-color: rgb(31, 37, 42);
 }
-.overflow{
-  overflow: hidden;
+.overflow {
+	overflow: hidden;
 }
-section{
-  padding: 10px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) / -2);
-  margin-left: calc(var(--bs-gutter-x) / -2);
-}
-
-.col {
-  flex: 1 0 0%;
-}
-
-.col-1 {
-  flex: 0 0 auto;
-  width: 8.3333333333%;
-}
-
-.col-2 {
-  flex: 0 0 auto;
-  width: 16.6666666667%;
-}
-
-.col-3 {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.col-4 {
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-}
-
-.col-5 {
-  flex: 0 0 auto;
-  width: 41.6666666667%;
-}
-
-.col-6 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.col-7 {
-  flex: 0 0 auto;
-  width: 58.3333333333%;
-}
-
-.col-8 {
-  flex: 0 0 auto;
-  width: 66.6666666667%;
-}
-
-.col-9 {
-  flex: 0 0 auto;
-  width: 75%;
-}
-
-.col-10 {
-  flex: 0 0 auto;
-  width: 83.3333333333%;
-}
-
-.col-11 {
-  flex: 0 0 auto;
-  width: 91.6666666667%;
-}
-
-.col-12 {
-  flex: 0 0 auto;
-  width: 100%;
-}
+// section {
+// 	padding: 10px;
+// }
 
 
 @import url(../fonts/Poppins-Light/style.css);
 @import url(../fonts/Poppins-Medium/style.css);
-@import "./scss/variables";
-@import "./scss/header";
-@import "./scss/home";
-@import "./scss/tools";
-@import "./scss/companions";
-@import "./scss/new-tools";
-@import "./scss/review";
-@import "./scss/contact";
-@import "./scss/footer";
-@import "./scss/popup";
-@import "./scss/response";
+@import './scss/variables';
+@import './scss/custom-grid';
+@import './scss/header';
+@import './scss/home';
+@import './scss/tools';
+@import './scss/companions';
+@import './scss/new-tools';
+@import './scss/review';
+@import './scss/contact';
+@import './scss/footer';
+@import './scss/popup';
+@import './scss/response';

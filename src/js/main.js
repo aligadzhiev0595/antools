@@ -74,9 +74,9 @@ document.querySelector(".tools__more").onclick = function () {
 
 const prev = document.querySelector(".btn-prev"),
   next = document.querySelector(".btn-next"),
-  sliders = document.querySelectorAll(".slider-inner"),
+  sliders = document.querySelectorAll(".review__wrapper"),
   dots = document.querySelectorAll(".dot");
-
+console.log(sliders);
 let index = 0;
 
 const activeSlide = (n) => {

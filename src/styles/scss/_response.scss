@@ -1,17 +1,8 @@
-$media-2sm: 400px;
-$media-sm: 640px;
+$media-sm: 576px;
 $media-md: 768px;
-$media-lg: 1024px;
-$media-xl: 1280px;
-$media-2xl: 1536px;
-
-@media (max-width: $media-2xl) {
-	.header {
-		&__nav {
-			column-gap: 180px;
-		}
-	}
-}
+$media-lg: 992px;
+$media-xl: 1200px;
+$media-2xl: 1400px;
 
 @media (max-width: $media-xl) {
 	.header {
@@ -19,33 +10,16 @@ $media-2xl: 1536px;
 			column-gap: 90px;
 		}
 	}
-
 	.companions {
 		.row {
 			.col-3 {
-				width: 49.333333%;
 				.wrapper {
 					text-align: center;
+					margin-bottom: 15px;
 				}
 			}
 		}
 	}
-
-	.new-tools {
-    .wrapper__inner {
-      margin-left: 20px;
-      .wrapper-card {
-        width: 45%;
-        padding: 20px;
-        margin-right: 0;
-        &:nth-child(1),
-        &:nth-child(3) {
-          margin-right: 20px;
-        }
-      }
-    }
-  }
-
 }
 
 @media (max-width: $media-lg) {
@@ -151,160 +125,108 @@ $media-2xl: 1536px;
 		}
 	}
 	.home {
-		&__social {
-			justify-content: center;
-		}
-	}
-	.tools {
-		.row {
-			padding: 10px;
-			justify-content: space-between;
-			.col-4 {
-				width: 49.333333%;
+		.wrapper {
+			&__social {
+				justify-content: center;
 			}
 		}
 	}
 	.new-tools {
-    .row {
-      .col-5 {
-        width: 100%;
-        .wrapper {
-          padding: 10px;
-          &__title {
-            text-align: center;
-          }
-          &__subtitle {
-            text-align: center;
-          }
-          &__btn {
-            display: block;
-            margin: 0 auto;
-          }
-        }
-      }
-      .col-7 {
-        width: 100%;
-        .wrapper {
-          margin-top: 30px;
-          &__inner {
-            justify-content: center;
-          }
-        }
-      }
-    }
-  }
+		.row {
+			.col-5 {
+				.wrapper-left {
+					padding: 10px;
+					margin-bottom: 30px;
+					&__title {
+						text-align: center;
+					}
+					&__subtitle {
+						text-align: center;
+						margin-bottom: 30px;
+					}
+					&__btn {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+	.companions {
+		&__inner {
+			padding: 50px 75px;
+		}
+	}
+	.review {
+		&__wrapper {
+			&.active {
+				flex-direction: column;
+			}
+		}
+		&__man {
+			display: none;
+		}
+		&__circle {
+			display: none;
+		}
+		&__typography {
+			position: static;
+		}
+		.btn-next,
+		.btn-prev {
+			top: 30%;
+		}
+		&__desc {
+			letter-spacing: 0.015em;
+			&::after {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (max-width: $media-md) {
 	.title {
 		font-size: 40px;
 	}
-	.tools {
-		.row {
-			justify-content: center;
-			.col-4 {
-				width: 100%;
-				.wrapper {
-					max-width: 100%;
-					min-height: 300px;
-				}
-			}
-		}
-	}
 	.companions {
 		&__title {
 			font-size: 30px;
 		}
+	}
+	.review {
+		&__desc {
+			font-size: 14px;
+		}
+	}
+	.footer {
 		.row {
-			justify-content: space-between;
+			margin-left: 10px;
 			.col-3 {
-				width: 45%;
-				margin-bottom: 10px;
+				width: 100%;
+				.wrapper {
+					text-align: center;
+					.brand {
+						display: flex;
+						justify-content: center;
+					}
+				}
 			}
 		}
 	}
-	.new-tools {
-    .row {
-      .col-7 {
-        width: 100%;
-        .wrapper__inner {
-          width: 100%;
-          margin-left: 0;
-        }
-        .wrapper-card {
-          width: 100%;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-	.review {
-		.slider {
-      display: block;
-      padding: 10px;
-    }
-    .slider-img {
-      width: 70%;
-			height: 80%;
-			margin: 0 auto;
-    }
-    .slider-desc {
-      margin-top: 20px;
-      line-height: 20px;
-    }
-		.btn-prev,
-		.btn-next{
-			top: 40%;
-		}
-  }
-	.footer {
-    .row {
-      margin-left: 10px;
-      .col-3 {
-        width: 100%;
-        .wrapper {
-          text-align: center;
-          .brand {
-            display: flex;
-            justify-content: center;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: $media-sm) {
 	.home {
 		.wrapper {
-			&::after {
-				right: -50px;
-				z-index: -100;
+			&__title {
+				font-size: 35px;
 			}
 		}
 	}
 	.overlay {
 		.popup {
 			max-width: 350px;
-		}
-	}
-	.tools {
-		.row {
-			.col-4 {
-				.wrapper {
-					margin-bottom: 0;
-					padding: 10px;
-					&__card-title {
-						font-size: 15px;
-					}
-					&__card-subtitle {
-						font-size: 14px;
-					}
-					&:nth-child(1) {
-						margin-right: 10px;
-					}
-				}
-			}
 		}
 	}
 	.companions {
@@ -314,114 +236,12 @@ $media-2xl: 1536px;
 		&__inner {
 			padding: 35px 40px;
 		}
-		.row {
-			.col-3 {
-        width: 100%;
-				.wrapper {
-					margin-bottom: 5px;
-				}
-			}
-		}
 	}
 	.review {
-    padding-top: 50px;
-		.slider-img {
-      width: 90%;
-			height: 70%;
-    }
-    .slider-desc {
-      line-height: 17px;
-    }
-  }
-}
-@media (max-width: $media-2sm) {
-	.home {
-		&__title {
-			font-size: 35px;
-		}
-		.wrapper {
-			&::after {
-				right: -50px;
-				z-index: -100;
-			}
+		.btn-next,
+		.btn-prev {
+			width: 25px;
+			height: 25px;
 		}
 	}
-	.overlay {
-		.popup {
-			max-width: 350px;
-		}
-	}
-	.tools {
-		&__title {
-			font-size: 30px;
-		}
-		&__subtitle {
-			font-size: 16px;
-		}
-		.row {
-			margin: 0 5px;
-			.col-4 {
-				width: 100%;
-				.wrapper {
-					margin-right: 0;
-					margin-bottom: 10px;
-					padding: 20px;
-					&__card-title {
-						font-size: 15px;
-					}
-					&__card-subtitle {
-						font-size: 14px;
-					}
-				}
-			}
-		}
-	}
-	.companions {
-		padding-top: 50px;
-		&__title {
-			font-size: 18px;
-		}
-		&__inner {
-			padding: 35px 40px;
-		}
-	}
-	.new-tools {
-    padding-top: 50px;
-    .row {
-      margin: 0 5px;
-      .col-5 {
-        .wrapper {
-          &__title {
-            font-size: 30px;
-          }
-          &__subtitle {
-            font-size: 14px;
-            margin-bottom: 30px;
-          }
-        }
-      }
-      .col-7 {
-        .wrapper {
-          .wrapper__inner {
-            margin-top: 20px;
-          }
-          .wrapper-card {
-            width: 100%;
-            padding: 20px;
-            margin-bottom: 10px;
-            margin-right: 0;
-          }
-        }
-      }
-    }
-  }
-	.review {
-		.slider-img {
-      width: 90%;
-			height: 70%;
-    }
-    .slider-desc {
-      line-height: 15px;
-    }
-  }
 }

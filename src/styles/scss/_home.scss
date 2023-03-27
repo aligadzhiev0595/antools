@@ -1,10 +1,13 @@
 .home {
   padding: 105px 0 100px;
   position: relative;
+  .wrapper{
+    position: relative;
     &::after {
       content: url("../images/home/Illustration.png");
       position: absolute;
-      top: -40px;
+      top: 50%;
+      transform: translateY(-50%);
       right: 0;
       z-index: -1;
     }
@@ -71,4 +74,5 @@
 		align-items: center;
 		justify-content: center;
   }
+}
 }

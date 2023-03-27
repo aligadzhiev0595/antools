@@ -14,16 +14,13 @@
     }
   }
   .wrapper {
-    padding: 33px;
+    padding: 15px;
     border-radius: 7px;
-    margin-right: 20px;
-    margin-bottom: 20px;
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    max-width: 350px;
         width: 100%;
-        min-height: 330px;
+        height: 100%;
     &::after {
       content: "";
       background-color: transparent;
@@ -101,6 +98,8 @@
       color: $secondary-color;
       padding: 9px 35px;
       transition: 0.3s;
+    border: 1px solid $footer-hr;
+
     }
   }
   &__more {
@@ -111,6 +110,7 @@
 		transition: 0.3s;
 		display: block;
 		margin: 30px auto;
+    border: 1px solid $footer-hr;
     &:hover {
       color: $white-color;
       background-color: $main-color;

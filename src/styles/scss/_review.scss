@@ -1,44 +1,71 @@
 .review {
 	padding-top: 120px;
-	.flex-wrapper {
-		width: 100%;
-	}
-	.slider-wrapper {
+	&__slider {
 		width: 100%;
 		height: 490px;
 		position: relative;
 	}
-	.slider-inner {
+	&__wrapper {
 		display: none;
+		&.active {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 100%;
+			height: 100%;
+			animation: fadeIn ease 1s;
+		}
 	}
-	.slider-inner.active {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-		animation: fadeIn ease 1s;
+	&__images {
+		position: relative;
 	}
-  .slider {
-		display: flex;
+	&__circle {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		z-index: -10;
 	}
-	.slider-img {
-		display: block;
+	&__typography {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background-color: $black-aplha;
+		backdrop-filter: blur(25px);
+		border-radius: 8px;
+		padding: 15px;
+
+		h4 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 39px;
+			letter-spacing: 0.015em;
+			color:$white-color;
+		}
+
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: $secondary-color;
+		}
 	}
-	.slider-desc {
-		margin-top: 100px;
+	&__desc {
+		max-width: 500px;
 		font-family: $main-text;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 30px;
-		letter-spacing: 0.015em;
 		color: $secondary-color;
 		position: relative;
 		&::after {
 			content: url(../images/review/after.svg);
 			position: absolute;
-			top: -50px;
-			left: -50px;
+			top: 0;
+			left: 0;
+			transform: translate(-50%, -50%);
 		}
 	}
 	.btn-prev,
@@ -51,9 +78,9 @@
 		opacity: 0.7;
 		cursor: pointer;
 		transition: opacity 0.2s ease-in-out;
-    img{
-      width: 100%;
-    }
+		img {
+			width: 100%;
+		}
 	}
 	.btn-prev {
 		&:hover {
@@ -61,33 +88,33 @@
 		}
 	}
 	.btn-next {
-    transform: rotate(180deg);
+		transform: rotate(180deg);
 		left: auto;
 		right: 0;
 		&:hover {
 			opacity: 1;
 		}
 	}
-	.dots-wrapper {
+	.dots {
 		display: flex;
 		justify-content: center;
-		margin-top: 15px;
 		padding-top: 50px;
 	}
-	.dot.active {
-		background-color: $main-color;
-    opacity: 1;
-	}
-	span {
+
+	.dot {
 		background-color: $white-color;
 		border-radius: 4px;
 		width: 44px;
 		height: 6px;
 		margin-right: 10px;
 		cursor: pointer;
-    opacity: 0.4;
+		opacity: 0.4;
 		&:last-child {
 			margin-right: 0;
+		}
+		&.active {
+			background-color: $main-color;
+			opacity: 1;
 		}
 	}
 }
@@ -97,9 +124,9 @@
 		opacity: 0;
 		margin-left: -1500px;
 	}
-  50%{
-    opacity: 0.5;
-  }
+	50% {
+		opacity: 0.5;
+	}
 	100% {
 		opacity: 1;
 		margin-left: 0;
