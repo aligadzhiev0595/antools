@@ -132,3 +132,52 @@
 		margin-left: 0;
 	}
 }
+
+@media (max-width: $media-lg) {
+	.review {
+		padding-top: 60px;
+		&__wrapper {
+			&.active {
+				flex-direction: column;
+			}
+		}
+		&__man {
+			display: none;
+		}
+		&__circle {
+			display: none;
+		}
+		&__typography {
+			position: static;
+		}
+		.btn-next,
+		.btn-prev {
+			top: 30%;
+		}
+		&__desc {
+			letter-spacing: 0.015em;
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: $media-md) {
+	.review {
+		&__desc {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: $media-sm) {
+	.review {
+		.dots{
+			padding-top: 30px;
+		}
+		.btn-next,
+		.btn-prev {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}

@@ -25,3 +25,43 @@
     margin-bottom: 45px;
   }
 }
+
+@media (max-width: $media-xl) {
+	.companions {
+		.row {
+			.col-3 {
+				.wrapper {
+					text-align: center;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $media-lg) {
+	.companions {
+		&__inner {
+			padding: 50px 75px;
+		}
+	}
+}
+
+@media (max-width: $media-md) {
+	.companions {
+		&__title {
+			font-size: 30px;
+		}
+	}
+}
+@media (max-width: $media-sm) {
+	.companions {
+		padding-top: 60px;
+		&__title {
+			font-size: 22px;
+		}
+		&__inner {
+			padding: 35px 40px;
+		}
+	}
+}

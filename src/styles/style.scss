@@ -23,6 +23,18 @@ body {
 // section {
 // 	padding: 10px;
 // }
+@media (max-width: $media-md) {
+	.title {
+		font-size: 40px;
+	}
+}
+@media (max-width: $media-sm) {
+	.overlay {
+		.popup {
+			max-width: 350px;
+		}
+	}
+}
 
 
 @import url(../fonts/Poppins-Light/style.css);
@@ -38,4 +50,3 @@ body {
 @import './scss/contact';
 @import './scss/footer';
 @import './scss/popup';
-@import './scss/response';

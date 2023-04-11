@@ -42,3 +42,26 @@
     }
   }
 }
+
+@media (max-width: $media-md) {
+	.footer {
+		.row {
+			margin-left: 10px;
+			.col-3 {
+				width: 100%;
+				.wrapper {
+					text-align: center;
+					.brand {
+						display: flex;
+						justify-content: center;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: $media-sm) {
+	.footer{
+		padding-top: 60px;
+	}
+}
