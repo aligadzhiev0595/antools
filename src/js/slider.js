@@ -11,16 +11,10 @@ export function slider() {
 	let index = 0
 
 	const activeSlide = n => {
-		// for (slide of sliders) {
-		// 	slide.classList.remove('active')
-		// }
 		sliders.forEach(slide => slide.classList.remove('active'))
 		sliders[n].classList.add('active')
 	}
 	const activeDot = n => {
-		// for (dot of dots) {
-		// 	dot.classList.remove('active')
-		// }
 		dots.forEach(dot => dot.classList.remove('active'))
 		dots[n].classList.add('active')
 	}
