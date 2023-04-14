@@ -85,3 +85,11 @@
     }
   }
 }
+
+@media (max-width: $media-sm) {
+	.overlay {
+		.popup {
+			max-width: 350px;
+		}
+	}
+}

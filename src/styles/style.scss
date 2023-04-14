@@ -28,13 +28,7 @@ body {
 		font-size: 40px;
 	}
 }
-@media (max-width: $media-sm) {
-	.overlay {
-		.popup {
-			max-width: 350px;
-		}
-	}
-}
+
 
 
 @import url(../fonts/Poppins-Light/style.css);
