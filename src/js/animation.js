@@ -13,15 +13,13 @@ export function animation(){
 	// )
 	gsap.to('.home', {
 		scrollTrigger:{
-			trigger: '.title',
-			markers: true,
-			start: 'center top',
+			trigger: '.tools',
+			start: '-350 0',
 			scrub: true,
-			duration:5
+			duration:1
 		},
-		yPercent:10,
-		xPercent: -50,
-		opacity: 0,
+		yPercent:40,
+		xPercent: -100,
 		scale:0.5,
 	})
 }

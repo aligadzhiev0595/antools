@@ -49,6 +49,11 @@ body {
   color: rgba(255, 255, 255, 0.549);
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+}
 .container {
   max-width: 1320px;
   padding: 0 15px;
@@ -789,6 +794,7 @@ body {
   background-color: rgba(40, 48, 54, 0.6);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 25px;
   position: relative;
   overflow: hidden;
@@ -1359,4 +1365,10 @@ body {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .overlay .popup {
+    max-width: 350px;
+  }
 }/*# sourceMappingURL=style.css.map */

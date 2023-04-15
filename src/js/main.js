@@ -8,8 +8,14 @@ const burger = document.querySelector('.burger'),
 	nav = document.querySelector('.header__nav'),
 	link = document.querySelectorAll('.header__link')
 
+const screen = window.matchMedia('(min-width:1024px)')
+
 burgerMenu(burger, nav, link)
+
 popupForm(burger, nav)
+
 loadingCards()
+
 slider()
-animation()
+
+if(screen.matches) animation();
