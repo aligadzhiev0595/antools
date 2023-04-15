@@ -83,9 +83,42 @@ export function animation() {
 			trigger: '.tools',
 			start: '100 0',
 			scrub: true,
-			markers: true
+			// markers: true
 		},
 		y:200,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('.wrapper-left__title', {
+		scrollTrigger: {
+			trigger: '.tools',
+			start: '450 0',
+			scrub: true,
+			// markers: true
+		},
+		y:100,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('.wrapper-left__subtitle', {
+		scrollTrigger: {
+			trigger: '.tools',
+			start: '450 0',
+			scrub: true,
+			// markers: true
+		},
+		y:120,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('wrapper-left__btn', {
+		scrollTrigger: {
+			trigger: '.tools',
+			start: '450 0',
+			scrub: true,
+			// markers: true
+		},
+		y:140,
 		autoAlpha: 0,
 		duration: 1,
 	})
