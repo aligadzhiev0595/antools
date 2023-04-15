@@ -1097,14 +1097,13 @@ body {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-left: -1500px;
+    transform: translateX(-100%);
   }
   50% {
     opacity: 0.5;
   }
   100% {
     opacity: 1;
-    margin-left: 0;
   }
 }
 @media (max-width: 992px) {

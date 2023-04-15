@@ -43,7 +43,7 @@ export function animation() {
 		},
 		scale: 0,
 		duration: 1,
-		stagger: 0.2
+		stagger: 0.2,
 	})
 	gsap.from('.wrapper__card-text', {
 		scrollTrigger: {
@@ -54,7 +54,7 @@ export function animation() {
 		},
 		scale: 0,
 		duration: 1,
-		stagger: 0.2
+		stagger: 0.2,
 	})
 	gsap.from('.wrapper__card-bottom', {
 		scrollTrigger: {
@@ -65,7 +65,7 @@ export function animation() {
 		},
 		scale: 0,
 		duration: 1,
-		stagger: 0.2
+		stagger: 0.2,
 	})
 	gsap.from('.tools__more', {
 		scrollTrigger: {
@@ -74,7 +74,7 @@ export function animation() {
 			scrub: true,
 			// markers: true
 		},
-		y:120,
+		y: 120,
 		autoAlpha: 0,
 		duration: 1,
 	})
@@ -85,7 +85,7 @@ export function animation() {
 			scrub: true,
 			// markers: true
 		},
-		y:200,
+		y: 200,
 		autoAlpha: 0,
 		duration: 1,
 	})
@@ -96,7 +96,7 @@ export function animation() {
 			scrub: true,
 			// markers: true
 		},
-		y:100,
+		y: 100,
 		autoAlpha: 0,
 		duration: 1,
 	})
@@ -107,18 +107,90 @@ export function animation() {
 			scrub: true,
 			// markers: true
 		},
-		y:120,
+		y: 120,
 		autoAlpha: 0,
 		duration: 1,
 	})
-	gsap.from('wrapper-left__btn', {
+	gsap.from('.wrapper-left__btn', {
 		scrollTrigger: {
 			trigger: '.tools',
 			start: '450 0',
 			scrub: true,
 			// markers: true
 		},
-		y:140,
+		y: 140,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('.review__circle', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '100 0',
+			scrub: true,
+			markers: true
+		},
+		scale: 0,
+		duration: 1,
+	})
+	gsap.from('.review__man', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '150 0',
+			scrub: true,
+			// markers: true
+		},
+		scale: 0,
+		duration: 1,
+	})
+	gsap.from('.review__typography', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '100 0',
+			scrub: true,
+			// markers: true
+		},
+		scale: 0,
+		duration: 1,
+	})
+	gsap.from('.btn-prev', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '100 0',
+			scrub: true,
+			// markers: true
+		},
+		scale: 0,
+		duration: 1,
+	})
+	gsap.from('.btn-next', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '100 0',
+			scrub: true,
+			// markers: true
+		},
+		scale: 0,
+		duration: 1,
+	})
+	gsap.from('.review__desc', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '100 0',
+			scrub: true,
+			// markers: true
+		},
+		y: 140,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('.dots', {
+		scrollTrigger: {
+			trigger: '.new-tools',
+			start: '100 0',
+			scrub: true,
+			// markers: true
+		},
+		y: 140,
 		autoAlpha: 0,
 		duration: 1,
 	})
