@@ -1,7 +1,58 @@
-
 export function animation() {
 	const screen = window.matchMedia('(min-width:1024px)')
-	if(screen.matches){
+
+	if (screen.matches) {
+		gsap.fromTo(
+			'.brand',
+			{
+				y: -50,
+				opacity: 0,
+			},
+			{
+				y: 0,
+				opacity: 1,
+				duration: 1,
+			}
+		)
+		gsap.fromTo(
+			'.header__item',
+			{
+				y: -50,
+				opacity: 0,
+			},
+			{
+				y: 0,
+				opacity: 1,
+				duration: 1,
+				stagger: 0.2,
+			}
+		)
+		gsap.fromTo(
+			'.header__item-btn',
+			{ y: -50, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1, stagger: 0.4 }
+		)
+		gsap.fromTo(
+			'.wrapper__title',
+			{ y: -100, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1 }
+		)
+		gsap.fromTo(
+			'.wrapper__subtitle',
+			{ y: -100, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1 }
+		)
+		gsap.fromTo(
+			'.form',
+			{ y: -100, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1 }
+		)
+		gsap.fromTo(
+			'.wrapper__inner',
+			{ y: -50, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1, stagger: 0.2 }
+		)
+		gsap.fromTo('.wrapper__image', {scale:0}, {scale:1,duration:1})
 		gsap.to('.home', {
 			scrollTrigger: {
 				trigger: '.home',
@@ -12,7 +63,7 @@ export function animation() {
 			yPercent: 5,
 			duration: 1,
 		})
-	
+
 		gsap.from('.tools__title', {
 			scrollTrigger: {
 				trigger: '.home',
@@ -24,7 +75,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-	
+
 		gsap.from('.tools__subtitle', {
 			scrollTrigger: {
 				trigger: '.home',
@@ -36,7 +87,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-	
+
 		gsap.from('.wrapper__card-top', {
 			scrollTrigger: {
 				trigger: '.tools',
@@ -197,7 +248,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-	
+
 		gsap.from('.contact__title', {
 			scrollTrigger: {
 				trigger: '.review',
@@ -230,6 +281,6 @@ export function animation() {
 			y: 140,
 			autoAlpha: 0,
 			duration: 1,
-		})	
+		})
 	}
 }
