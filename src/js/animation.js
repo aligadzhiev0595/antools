@@ -127,7 +127,7 @@ export function animation() {
 			trigger: '.new-tools',
 			start: '100 0',
 			scrub: true,
-			markers: true
+			// markers: true
 		},
 		scale: 0,
 		duration: 1,
@@ -194,4 +194,39 @@ export function animation() {
 		autoAlpha: 0,
 		duration: 1,
 	})
+
+	gsap.from('.contact__title', {
+		scrollTrigger: {
+			trigger: '.review',
+			start: '-100 0',
+			scrub: true,
+			markers: true
+		},
+		y: 100,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('.contact__subtitle', {
+		scrollTrigger: {
+			trigger: '.review',
+			start: '-80 0',
+			scrub: true,
+			// markers: true
+		},
+		y: 120,
+		autoAlpha: 0,
+		duration: 1,
+	})
+	gsap.from('.form', {
+		scrollTrigger: {
+			trigger: '.review',
+			start: '-60 0',
+			scrub: true,
+			// markers: true
+		},
+		y: 140,
+		autoAlpha: 0,
+		duration: 1,
+	})
+
 }
