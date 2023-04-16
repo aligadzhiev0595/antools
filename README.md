@@ -1,7 +1,22 @@
-## test project for Sunrise web-company
+# Training project
+
+## Project layout
+
+```txt
+antools/
+├─ src/
+│ ├─ fonts              Font set
+│ ├─ images             Pictures set
+│ ├─ js                 Js functions
+│ └─ styles             Style set
+│
+└─ index.html           HyperText Markup Language
 ```
-Todo:
-Добавить Спрайты для свг
-Переписать структуру
-Добавить анимацию с библиотекой Гшок
+
+## Tech stack
+```txt
+HTML
+CSS / SCSS
+JavaScript
+GreenSock - GSAP Animation
 ```
