@@ -2,6 +2,7 @@ export function animation() {
 	const screen = window.matchMedia('(min-width:1024px)')
 
 	if (screen.matches) {
+		//header
 		gsap.fromTo(
 			'.brand',
 			{
@@ -32,27 +33,7 @@ export function animation() {
 			{ y: -50, opacity: 0 },
 			{ y: 0, opacity: 1, duration: 1, stagger: 0.4 }
 		)
-		gsap.fromTo(
-			'.wrapper__title',
-			{ y: -100, opacity: 0 },
-			{ y: 0, opacity: 1, duration: 1 }
-		)
-		gsap.fromTo(
-			'.wrapper__subtitle',
-			{ y: -100, opacity: 0 },
-			{ y: 0, opacity: 1, duration: 1 }
-		)
-		gsap.fromTo(
-			'.form',
-			{ y: -100, opacity: 0 },
-			{ y: 0, opacity: 1, duration: 1 }
-		)
-		gsap.fromTo(
-			'.wrapper__inner',
-			{ y: -50, opacity: 0 },
-			{ y: 0, opacity: 1, duration: 1, stagger: 0.2 }
-		)
-		gsap.fromTo('.wrapper__image', {scale:0}, {scale:1,duration:1})
+		//home
 		gsap.to('.home', {
 			scrollTrigger: {
 				trigger: '.home',
@@ -63,7 +44,31 @@ export function animation() {
 			yPercent: 5,
 			duration: 1,
 		})
-
+		gsap.fromTo(
+			'.home__title',
+			{ y: -100, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1 }
+		)
+		gsap.fromTo(
+			'.home__subtitle',
+			{ y: -100, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1 }
+		)
+		gsap.fromTo(
+			'.home__form',
+			{ y: -100, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1 }
+		)
+		gsap.fromTo(
+			'.home__inner',
+			{ y: -50, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 1, stagger: 0.2 }
+		)
+		gsap.fromTo('.home__image',
+		 {scale:0},
+		 {scale:1,duration:1}
+		 )
+		//tools
 		gsap.from('.tools__title', {
 			scrollTrigger: {
 				trigger: '.home',
@@ -132,6 +137,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
+		//companions
 		gsap.from('.companions', {
 			scrollTrigger: {
 				trigger: '.tools',
@@ -176,6 +182,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
+		//review
 		gsap.from('.review__circle', {
 			scrollTrigger: {
 				trigger: '.new-tools',
@@ -248,7 +255,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-
+		//contact
 		gsap.from('.contact__title', {
 			scrollTrigger: {
 				trigger: '.review',
@@ -271,14 +278,14 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.form', {
+		gsap.from('.contact__form', {
 			scrollTrigger: {
 				trigger: '.review',
 				start: '-60 0',
 				scrub: true,
 				// markers: true
 			},
-			y: 140,
+			y: 180,
 			autoAlpha: 0,
 			duration: 1,
 		})
