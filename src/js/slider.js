@@ -3,10 +3,10 @@
  */
 
 export function slider() {
-	const prev = document.querySelector('.btn-prev'),
-		next = document.querySelector('.btn-next'),
-		sliders = document.querySelectorAll('.review__wrapper'),
-		dots = document.querySelectorAll('.dot')
+	const prev = document.querySelector('.review__btn-prev'),
+		next = document.querySelector('.review__btn-next'),
+		sliders = document.querySelectorAll('.review__slider'),
+		dots = document.querySelectorAll('.review__dot')
 
 	let index = 0
 

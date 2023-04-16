@@ -879,15 +879,15 @@ body {
 .review {
   padding-top: 120px;
 }
-.review__slider {
+.review__wrapper {
   width: 100%;
   height: 490px;
   position: relative;
 }
-.review__wrapper {
+.review__slider {
   display: none;
 }
-.review__wrapper.active {
+.review__slider.active {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -946,8 +946,7 @@ body {
   left: 0;
   transform: translate(-50%, -50%);
 }
-.review .btn-prev,
-.review .btn-next {
+.review__btn-prev, .review__btn-next {
   position: absolute;
   left: 0;
   top: 50%;
@@ -957,27 +956,26 @@ body {
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
 }
-.review .btn-prev img,
-.review .btn-next img {
+.review__btn-prev img, .review__btn-next img {
   width: 100%;
 }
-.review .btn-prev:hover {
+.review__btn-prev:hover {
   opacity: 1;
 }
-.review .btn-next {
+.review__btn-next {
   transform: rotate(180deg);
   left: auto;
   right: 0;
 }
-.review .btn-next:hover {
+.review__btn-next:hover {
   opacity: 1;
 }
-.review .dots {
+.review__dots {
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
-.review .dot {
+.review__dot {
   background-color: rgba(255, 255, 255, 0.902);
   border-radius: 4px;
   width: 44px;
@@ -986,10 +984,10 @@ body {
   cursor: pointer;
   opacity: 0.4;
 }
-.review .dot:last-child {
+.review__dot:last-child {
   margin-right: 0;
 }
-.review .dot.active {
+.review__dot.active {
   background-color: rgb(255, 110, 48);
   opacity: 1;
 }
@@ -1010,7 +1008,7 @@ body {
   .review {
     padding-top: 60px;
   }
-  .review__wrapper.active {
+  .review__slider.active {
     flex-direction: column;
   }
   .review__man {
@@ -1022,8 +1020,7 @@ body {
   .review__typography {
     position: static;
   }
-  .review .btn-next,
-  .review .btn-prev {
+  .review__btn-next, .review__btn-prev {
     top: 30%;
   }
   .review__desc {
@@ -1039,11 +1036,10 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .review .dots {
+  .review__dots {
     padding-top: 30px;
   }
-  .review .btn-next,
-  .review .btn-prev {
+  .review__btn-next, .review__btn-prev {
     width: 25px;
     height: 25px;
   }
