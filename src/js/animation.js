@@ -92,40 +92,18 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
+		gsap.from('.card-animate', {
+			scrollTrigger: {
+				trigger: '.tools',
+				start: '-300 0',
+				scrub: true,
+				// markers: true
+			},
+			scale: 0,
+			duration: 1,
+			stagger: 0.2,
+		})
 
-		gsap.from('.wrapper__card-top', {
-			scrollTrigger: {
-				trigger: '.tools',
-				start: '-300 0',
-				scrub: true,
-				// markers: true
-			},
-			scale: 0,
-			duration: 1,
-			stagger: 0.2,
-		})
-		gsap.from('.wrapper__card-text', {
-			scrollTrigger: {
-				trigger: '.tools',
-				start: '-300 0',
-				scrub: true,
-				// markers: true
-			},
-			scale: 0,
-			duration: 1,
-			stagger: 0.2,
-		})
-		gsap.from('.wrapper__card-bottom', {
-			scrollTrigger: {
-				trigger: '.tools',
-				start: '-300 0',
-				scrub: true,
-				// markers: true
-			},
-			scale: 0,
-			duration: 1,
-			stagger: 0.2,
-		})
 		gsap.from('.tools__more', {
 			scrollTrigger: {
 				trigger: '.tools',
@@ -149,7 +127,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.wrapper-left__title', {
+		gsap.from('.wrapper-text__title', {
 			scrollTrigger: {
 				trigger: '.tools',
 				start: '450 0',
@@ -160,7 +138,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.wrapper-left__subtitle', {
+		gsap.from('.wrapper-text__subtitle', {
 			scrollTrigger: {
 				trigger: '.tools',
 				start: '450 0',
@@ -171,7 +149,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.wrapper-left__btn', {
+		gsap.from('.wrapper-text__btn', {
 			scrollTrigger: {
 				trigger: '.tools',
 				start: '450 0',

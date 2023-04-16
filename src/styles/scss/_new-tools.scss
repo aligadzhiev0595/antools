@@ -1,6 +1,6 @@
 .new-tools {
 	padding-top: 100px;
-	.wrapper-left {
+	.wrapper-text {
 		&__title {
 			font-size: 48px;
 			margin-bottom: 30px;
@@ -20,101 +20,13 @@
 			color: $white-color;
 		}
 	}
-	.wrapper {
-		padding: 15px;
-		border-radius: 7px;
-		transition: 0.3s;
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		height: 100%;
-		&::after {
-			content: '';
-			background-color: transparent;
-			width: 65px;
-			height: 65px;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-		&:hover {
-			background-color: $black-aplha;
-			backdrop-filter: blur(50px);
-			transition: 0.3s;
-			box-shadow: none;
-			&::after {
-				background-color: $main-alpha;
-				filter: blur(40px);
-				transition: 0.3s;
-			}
-			.wrapper__card-btn {
-				background-color: $main-color;
-				color: $white-color;
-				transition: 0.3s;
-			}
-		}
-		&__card-top {
-			display: flex;
-		}
-		&__card-info {
-			margin-left: 40px;
-		}
-		&__card-title {
-			font-family: $main-text;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 24px;
-			line-height: 36px;
-			color: $white-color;
-		}
-		&__card-subtitle {
-			font-family: $main-text;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 18px;
-			line-height: 27px;
-			color: $third-color;
-		}
-		&__card-text {
-			font-family: $main-text;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 30px;
-			color: $secondary-color;
-			margin: 30px 0;
-		}
-		&__card-bottom {
-			display: flex;
-			justify-content: space-between;
-		}
-		&__card-icons {
-			display: flex;
-			align-items: center;
-			column-gap: 15px;
-			span {
-				cursor: pointer;
-			}
-		}
-		&__card-btn {
-			font-family: $main-text;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 16px;
-			line-height: 24px;
-			color: $secondary-color;
-			border: 1px solid $footer-hr;
-			padding: 9px 35px;
-			transition: 0.3s;
-		}
-	}
 }
 
 @media (max-width: $media-lg) {
 	.new-tools {
 		.row {
 			.col-5 {
-				.wrapper-left {
+				.wrapper-text {
 					padding: 10px;
 					margin-bottom: 30px;
 					&__title {
