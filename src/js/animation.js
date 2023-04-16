@@ -127,7 +127,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.wrapper-text__title', {
+		gsap.from('.new-tools__title', {
 			scrollTrigger: {
 				trigger: '.tools',
 				start: '450 0',
@@ -138,7 +138,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.wrapper-text__subtitle', {
+		gsap.from('.new-tools__subtitle', {
 			scrollTrigger: {
 				trigger: '.tools',
 				start: '450 0',
@@ -149,7 +149,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.wrapper-text__btn', {
+		gsap.from('.new-tools__btn', {
 			scrollTrigger: {
 				trigger: '.tools',
 				start: '450 0',
