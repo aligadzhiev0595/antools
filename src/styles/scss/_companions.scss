@@ -1,6 +1,6 @@
 .companions {
   padding-top: 70px;
-  &__inner {
+  &__wrapper {
     width: 100%;
     padding: 55px 80px;
     background-color: $black-aplha;
@@ -29,20 +29,16 @@
 
 @media (max-width: $media-xl) {
 	.companions {
-		.row {
-			.col-3 {
-				.wrapper {
-					text-align: center;
+		&__item{
+			text-align: center;
 					margin-bottom: 15px;
-				}
-			}
 		}
 	}
 }
 
 @media (max-width: $media-lg) {
 	.companions {
-		&__inner {
+		&__wrapper {
 			padding: 50px 75px;
 		}
 	}
@@ -61,7 +57,7 @@
 		&__title {
 			font-size: 22px;
 		}
-		&__inner {
+		&__wrapper {
 			padding: 35px 40px;
 		}
 	}

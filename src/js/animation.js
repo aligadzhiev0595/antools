@@ -127,6 +127,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
+		//new-tools
 		gsap.from('.new-tools__title', {
 			scrollTrigger: {
 				trigger: '.tools',
