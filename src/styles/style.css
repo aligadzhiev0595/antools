@@ -812,6 +812,11 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 576px) {
+  .tools__title {
+    font-size: 35px;
+  }
+}
 .companions {
   padding-top: 70px;
 }
@@ -906,6 +911,9 @@ body {
 @media (max-width: 576px) {
   .new-tools {
     padding-top: 60px;
+  }
+  .new-tools__title {
+    font-size: 35px;
   }
 }
 .review {
@@ -1098,6 +1106,9 @@ body {
 @media (max-width: 576px) {
   .contact {
     padding-top: 60px;
+  }
+  .contact__title {
+    font-size: 35px;
   }
   .contact__subtitle {
     margin-bottom: 40px;

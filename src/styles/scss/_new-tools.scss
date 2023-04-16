@@ -38,5 +38,8 @@
 @media (max-width: $media-sm) {
 	.new-tools {
 		padding-top: 60px;
+		&__title{
+			font-size: 35px;
+		}
 	}
 }
