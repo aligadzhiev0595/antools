@@ -192,7 +192,7 @@ export function animation() {
 			scale: 0,
 			duration: 1,
 		})
-		gsap.from('.btn-prev', {
+		gsap.from('.review__btn-prev', {
 			scrollTrigger: {
 				trigger: '.new-tools',
 				start: '100 0',
@@ -202,7 +202,7 @@ export function animation() {
 			scale: 0,
 			duration: 1,
 		})
-		gsap.from('.btn-next', {
+		gsap.from('.review__btn-next', {
 			scrollTrigger: {
 				trigger: '.new-tools',
 				start: '100 0',
@@ -223,7 +223,7 @@ export function animation() {
 			autoAlpha: 0,
 			duration: 1,
 		})
-		gsap.from('.dots', {
+		gsap.from('.review__dots', {
 			scrollTrigger: {
 				trigger: '.new-tools',
 				start: '100 0',
