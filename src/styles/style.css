@@ -89,97 +89,6 @@ body {
   transform: translate(0, -50%);
 }
 
-.wrapper-card {
-  padding: 15px;
-  border-radius: 7px;
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-.wrapper-card::after {
-  content: "";
-  background-color: transparent;
-  width: 65px;
-  height: 65px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.wrapper-card:hover {
-  background-color: rgba(40, 48, 54, 0.6);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  transition: 0.3s;
-  box-shadow: none;
-}
-.wrapper-card:hover::after {
-  background-color: rgba(255, 110, 48, 0.6);
-  filter: blur(40px);
-  transition: 0.3s;
-}
-.wrapper-card:hover .wrapper-card__btn {
-  background-color: rgb(255, 110, 48);
-  color: rgba(255, 255, 255, 0.902);
-  transition: 0.3s;
-}
-.wrapper-card__top {
-  display: flex;
-}
-.wrapper-card__info {
-  margin-left: 40px;
-}
-.wrapper-card__title {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: rgba(255, 255, 255, 0.902);
-}
-.wrapper-card__subtitle {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(255, 165, 55, 0.55);
-}
-.wrapper-card__text {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.549);
-  margin: 30px 0;
-}
-.wrapper-card__bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.wrapper-card__icons {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-}
-.wrapper-card__icons span {
-  cursor: pointer;
-}
-.wrapper-card__btn {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.549);
-  padding: 9px 35px;
-  transition: 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
 .container {
   max-width: 1320px;
   padding: 0 15px;
@@ -550,6 +459,119 @@ body {
   .footer .brand {
     display: flex;
     justify-content: center;
+  }
+}
+.wrapper-card {
+  padding: 15px;
+  border-radius: 7px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-card::after {
+  content: "";
+  background-color: transparent;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wrapper-card:hover {
+  background-color: rgba(40, 48, 54, 0.6);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  transition: 0.3s;
+  box-shadow: none;
+}
+.wrapper-card:hover::after {
+  background-color: rgba(255, 110, 48, 0.6);
+  filter: blur(40px);
+  transition: 0.3s;
+}
+.wrapper-card:hover .wrapper-card__btn {
+  background-color: rgb(255, 110, 48);
+  color: rgba(255, 255, 255, 0.902);
+  transition: 0.3s;
+}
+.wrapper-card__top {
+  display: flex;
+}
+.wrapper-card__info {
+  margin-left: 40px;
+}
+.wrapper-card__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.902);
+}
+.wrapper-card__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(255, 165, 55, 0.55);
+}
+.wrapper-card__text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.549);
+  margin: 30px 0;
+}
+.wrapper-card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-card__icons {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.wrapper-card__icons span {
+  cursor: pointer;
+}
+.wrapper-card__btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.549);
+  padding: 9px 35px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 576px) {
+  .col-6,
+  .col-4 {
+    margin-bottom: 10px;
+  }
+  .wrapper-card {
+    background-color: rgba(40, 48, 54, 0.6);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    transition: 0.3s;
+    box-shadow: none;
+  }
+  .wrapper-card::after {
+    background-color: rgba(255, 110, 48, 0.6);
+    filter: blur(40px);
+    transition: 0.3s;
+  }
+  .wrapper-card:hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 }
 .header {

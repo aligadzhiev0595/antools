@@ -102,99 +102,13 @@ body {
 		transform: translate(0, -50%);
 	}
 }
-.wrapper-card {
-	padding: 15px;
-	border-radius: 7px;
-	transition: 0.3s;
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-	&::after {
-		content: '';
-		background-color: transparent;
-		width: 65px;
-		height: 65px;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	&:hover {
-		background-color: $black-aplha;
-		backdrop-filter: blur(50px);
-		transition: 0.3s;
-		box-shadow: none;
-		&::after {
-			background-color: $main-alpha;
-			filter: blur(40px);
-			transition: 0.3s;
-		}
-		.wrapper-card__btn {
-			background-color: $main-color;
-			color: $white-color;
-			transition: 0.3s;
-		}
-	}
-	&__top {
-		display: flex;
-	}
-	&__info {
-		margin-left: 40px;
-	}
-	&__title {
-		font-family: $main-text;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 24px;
-		line-height: 36px;
-		color: $white-color;
-	}
-	&__subtitle {
-		font-family: $main-text;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 27px;
-		color: $third-color;
-	}
-	&__text {
-		font-family: $main-text;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 30px;
-		color: $secondary-color;
-		margin: 30px 0;
-	}
-	&__bottom {
-		display: flex;
-		justify-content: space-between;
-	}
-	&__icons {
-		display: flex;
-		align-items: center;
-		column-gap: 15px;
-		span {
-			cursor: pointer;
-		}
-	}
-	&__btn {
-		font-family: $main-text;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 24px;
-		color: $secondary-color;
-		padding: 9px 35px;
-		transition: 0.3s;
-		border: 1px solid $footer-hr;
-	}
-}
+
 
 @import url(../fonts/Poppins-Light/style.css);
 @import url(../fonts/Poppins-Medium/style.css);
 @import './scss/custom-grid';
 @import './scss/brand';
+@import './scss/wrapper-card';
 @import './scss/header';
 @import './scss/home';
 @import './scss/tools';
