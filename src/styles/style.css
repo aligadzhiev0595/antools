@@ -180,6 +180,28 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.brand__link {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.902);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+@media (max-width: 992px) {
+  .footer__wrapper {
+    text-align: center;
+  }
+  .footer .brand {
+    display: flex;
+    justify-content: center;
+  }
+}
 .container {
   max-width: 1320px;
   padding: 0 15px;
@@ -537,18 +559,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.header .brand__link {
-  display: flex;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.902);
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
 }
 .header__nav {
   display: flex;
@@ -1074,31 +1084,16 @@ body {
 .footer {
   padding-top: 100px;
 }
-.footer .hr {
+.footer__hr {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.15);
   height: 2px;
   margin-bottom: 40px;
 }
-.footer .wrapper {
+.footer__wrapper {
   padding: 20px;
 }
-.footer .wrapper .brand {
-  margin-bottom: 20px;
-}
-.footer .wrapper .brand__link {
-  display: flex;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.902);
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
-}
-.footer .wrapper__title {
+.footer h3 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1107,7 +1102,7 @@ body {
   color: rgba(255, 255, 255, 0.902);
   margin: 9px 0;
 }
-.footer .wrapper__subtitle {
+.footer p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1117,21 +1112,6 @@ body {
   margin-bottom: 7px;
 }
 
-@media (max-width: 768px) {
-  .footer .row {
-    margin-left: 10px;
-  }
-  .footer .row .col-3 {
-    width: 100%;
-  }
-  .footer .row .col-3 .wrapper {
-    text-align: center;
-  }
-  .footer .row .col-3 .wrapper .brand {
-    display: flex;
-    justify-content: center;
-  }
-}
 @media (max-width: 576px) {
   .footer {
     padding-top: 60px;

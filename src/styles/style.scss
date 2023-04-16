@@ -1,9 +1,9 @@
-$main-text:'Poppins', sans-serif;
+$main-text: 'Poppins', sans-serif;
 $main-color: rgb(255, 110, 48);
-$main-alpha:rgba(255, 110, 48, 0.6);
+$main-alpha: rgba(255, 110, 48, 0.6);
 $white-color: rgba(255, 255, 255, 0.902);
-$secondary-color:rgba(255, 255, 255, 0.549);
-$third-color:rgba(255, 165, 55, 0.55);
+$secondary-color: rgba(255, 255, 255, 0.549);
+$third-color: rgba(255, 165, 55, 0.55);
 $black-aplha: rgba(40, 48, 54, 0.6);
 $black-color: rgb(40, 48, 54);
 $overlay-aplha: rgba(25, 25, 25, 0.4);
@@ -46,7 +46,7 @@ body {
 	background-color: transparent;
 	cursor: pointer;
 }
-.title{
+.title {
 	font-family: $main-text;
 	font-style: normal;
 	font-weight: 500;
@@ -54,7 +54,7 @@ body {
 	line-height: 140%;
 	color: $white-color;
 }
-.subtitle{
+.subtitle {
 	font-family: $main-text;
 	font-style: normal;
 	font-weight: 400;
@@ -108,10 +108,10 @@ body {
 	transition: 0.3s;
 	position: relative;
 	overflow: hidden;
-			width: 100%;
-			height: 100%;
+	width: 100%;
+	height: 100%;
 	&::after {
-		content: "";
+		content: '';
 		background-color: transparent;
 		width: 65px;
 		height: 65px;
@@ -129,10 +129,10 @@ body {
 			filter: blur(40px);
 			transition: 0.3s;
 		}
-		.wrapper-card__btn{
-				background-color: $main-color;
-				color: $white-color;
-				transition: 0.3s;
+		.wrapper-card__btn {
+			background-color: $main-color;
+			color: $white-color;
+			transition: 0.3s;
 		}
 	}
 	&__top {
@@ -187,11 +187,35 @@ body {
 		color: $secondary-color;
 		padding: 9px 35px;
 		transition: 0.3s;
-	border: 1px solid $footer-hr;
-
+		border: 1px solid $footer-hr;
 	}
 }
 
+.brand {
+	&__link {
+		display: flex;
+		column-gap: 12px;
+		align-items: center;
+		color: $white-color;
+		font-family: $main-text;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 33px;
+	}
+}
+
+@media (max-width: $media-lg) {
+	.footer {
+		&__wrapper {
+			text-align: center;
+		}
+		.brand {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
 
 @import url(../fonts/Poppins-Light/style.css);
 @import url(../fonts/Poppins-Medium/style.css);
