@@ -191,35 +191,10 @@ body {
 	}
 }
 
-.brand {
-	&__link {
-		display: flex;
-		column-gap: 12px;
-		align-items: center;
-		color: $white-color;
-		font-family: $main-text;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 22px;
-		line-height: 33px;
-	}
-}
-
-@media (max-width: $media-lg) {
-	.footer {
-		&__wrapper {
-			text-align: center;
-		}
-		.brand {
-			display: flex;
-			justify-content: center;
-		}
-	}
-}
-
 @import url(../fonts/Poppins-Light/style.css);
 @import url(../fonts/Poppins-Medium/style.css);
 @import './scss/custom-grid';
+@import './scss/brand';
 @import './scss/header';
 @import './scss/home';
 @import './scss/tools';
