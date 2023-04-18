@@ -1,5 +1,9 @@
 # Training project
 
+## Figma
+```text
+https://www.figma.com/file/d3sbBOXtyGYif0VnDl1FFu/Antools?t=haEGCm18J3GyDF6D-0
+```
 ## Project layout
 
 ```txt
